@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Matchday Central</title>
+    <style>
+        :root { --bg: #0a0a0a; --card: #161616; --text: #eee; --accent: #00ff87; }
+        body { font-family: 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); padding: 40px; margin: 0; }
+        .update-badge { display: inline-block; background: #222; border: 1px solid #333; color: #888; padding: 5px 12px; border-radius: 20px; font-size: 12px; margin-top: 10px; }
+        .update-dot { height: 8px; width: 8px; background-color: var(--accent); border-radius: 50%; display: inline-block; margin-right: 5px; box-shadow: 0 0 8px var(--accent); }
+        .section { margin-bottom: 60px; }
+        .league-label { font-size: 24px; font-weight: 800; text-transform: uppercase; border-left: 5px solid var(--accent); padding-left: 15px; margin-bottom: 25px; color: #fff; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 25px; }
+        .card { background: var(--card); border-radius: 12px; overflow: hidden; text-decoration: none; color: inherit; transition: 0.3s; display: block; }
+        .card:hover { transform: translateY(-5px); background: #222; }
+        .card img { width: 100%; aspect-ratio: 16/9; object-fit: cover; }
+        .card-body { padding: 15px; }
+        .card-title { font-size: 14px; font-weight: 500; line-height: 1.4; color: #ccc; }
+    </style>
+</head>
+<body>
+    <header style="margin-bottom: 50px;">
+        <h1 style="margin-bottom: 5px;">Matchday Central</h1>
+        <div class="update-badge"><span class="update-dot"></span>Last updated: {{ last_updated }}</div>
+    </header>
+    <main>
+        {{ content }}
+    </main>
+</body>
+</html>
