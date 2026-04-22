@@ -1,6 +1,9 @@
 name: Update Highlights Feed
 
 on:
+  push:
+    branches:
+      - main        # <--- Added: Trigger when you push code to main
   schedule:
     - cron: '0 */4 * * *' # Runs every 4 hours
   workflow_dispatch:      # Allows you to run it manually with a button click
