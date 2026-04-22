@@ -3,6 +3,10 @@ import datetime
 
 CHANNELS = {
     'Premier League': {'url': 'https://www.youtube.com/c/NBCSports/videos', 'match': 'PREMIER LEAGUE HIGHLIGHTS'},
+    'Bundesliga': {
+        'url': 'https://www.youtube.com/c/ESPNFC/videos', 
+        'match': 'Bundesliga Highlights'
+    },
     'La Liga': {'url': 'https://www.youtube.com/c/ESPNFC/videos', 'match': 'LALIGA Highlights'},
     'Champions League': {'url': 'https://www.youtube.com/c/CBSSportsGolazo/videos', 'match': 'Extended Highlights', 'must_contain': 'UCL'}
 }
