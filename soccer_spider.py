@@ -115,7 +115,7 @@ def build_page(data):
 
     html_template += "</body></html>"
     
-    with open("highlights.html", "w", encoding="utf-8") as f:
+    with open("index.html", "w", encoding="utf-8") as f:
         f.write(html_template)
     print("Done! Check highlights.html")
 
